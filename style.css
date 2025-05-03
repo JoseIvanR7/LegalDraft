@@ -1,0 +1,305 @@
+/* Fondo degradado */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #002244, #105daa);
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  /* Header con logo e info */
+  .header-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .header-text h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+  
+  .header-text h2 {
+    margin-top: 5px;
+    font-size: 18px;
+  }
+
+  .scrolling-header {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    animation: scroll-left-right 10s linear infinite;
+  }
+
+  @keyframes scroll-left-right {
+    0% {
+      transform: trasnlateX(-100%);
+    }
+
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  nav.nav-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 10px 0;
+  }
+  
+  .nav-option a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .nav-option img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .nav-option span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
+  .nav-option a:hover img {
+    transform: scale(1.2);
+    filter: brightness(1.5) drop-shadow(0 0 10px cyan);
+  }
+  
+  /* Sección de servicios */
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+  }
+  
+  section h1, section h2, section h3 {
+    color: #ffeecc;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 10px;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Slider */
+  #slider .slide {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  #slider img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  
+  #quienes-somos {
+    background: linear-gradient(135deg, #ffffff, #f0f8ff); /* Fondo degradado suave */
+    padding: 60px 20px;
+  }
+
+  .quienes-somos-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+  }
+
+  .qs-image img {
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.5s ease, filter 0.5s ease;
+  }
+  
+  .qs-image img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+  
+  .qs-text {
+    max-width: 600px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .qs-text.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .qs-text h2 {
+    font-size: 36px;
+    color: #003366;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .qs-text p {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.7;
+  }
+  
+
+#quienes-somos h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  font-family: 'Georgia', serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.4s ease, transform 0.4s ease; /* Agrega transición suave */
+}
+
+#quienes-somos h2:hover {
+  color: #0c51da; /* Cambia a un azul bonito */
+  transform: scale(1.05); /* Hace que crezca un poquito */
+}
+
+#quienes-somos p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#quienes-somos ul {
+  list-style-type: disc;
+  padding-left: 30px;
+  color: black;
+  font-size: 1.2em;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+#quienes-somos li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+#armonizacion {
+  background: linear-gradient(135deg, #ffffff, #e6f0ff);
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1000px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+#armonizacion h2 {
+  font-size: 36px;
+  color: #003366;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#armonizacion p {
+  font-size: 20px;
+  color: #333333;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Animación para que aparezca bonito */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 16px;
+  margin-top: 50px;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+/* Estilo para los íconos sociales */
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 15px;
+  font-size: 28px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: gold;
+}
+
+/* Animación suave de entrada */
+.animate-slide {
+  animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

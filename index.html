@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Legal Draft®</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="LegalDraft.ico" type="image/x-icon"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <header id="inicio">
+    <div class="scrolling-header">
+      <img src="LegalDraft.ico" alt="Logo Legal Draft" class="logo" />
+      <div class="header-text">
+        <h1>LEGAL DRAFT®</h1>
+        <h2 >Análisis y Estrategias Jurídicas de Alto Perfil</h2>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav-cards">
+    <div class="nav-option">
+      <a href="index.html">
+        <img src="Inicio.ico" alt="Inicio" />
+        <span>Inicio</span>
+      </a>
+    </div>
+
+    <div class="nav-option">
+      <a href="#quienes-somos">
+        <img src="QuienesSomos.ico" alt="¿Quiénes somos?" />
+        <span>¿Quiénes somos?</span>
+      </a>
+    </div>
+
+    <div class="nav-option">
+      <a href="#armonizacion">
+        <img src="Armonizacion.ico" alt="Armonizacion" />
+        <span>Armonización</span>
+      </a>
+    </div>
+
+    <div class="nav-option">
+      <a href="servicios.html">
+        <img src="Servicios.ico" alt="Servicios" />
+        <span>Servicios</span>
+      </a>
+    </div>
+    <div class="nav-option">
+      <a href="#contacto">
+        <img src="Contacto.ico" alt="Contacto" />
+        <span>Contacto</span>
+      </a>
+    </div>
+    <div class="nav-option">
+      <a href="#mas-info">
+        <img src="SaberMas.ico" alt="Saber más" />
+        <span>Saber más</span>
+      </a>
+    </div>
+  </nav>
+
+  <section id="slider">
+    <div class="container">
+        <div class="slide">
+      <div class="slider-content"><img src="Imagen2.jpg" alt="Imagen 1" /></div>      
+    </div>
+    </div>
+  </section>
+
+  <section id="quienes-somos">
+    <div class="container quienes-somos-container">
+      <div class="qs-image">
+        <img src="Imagen4.jpg" alt="Imagen 4" />
+      </div>
+      <div class="qs-text">
+        <h2>¿Quiénes somos?</h2>
+        <p>
+          <strong>Legal Draft®</strong> es una firma especializada en <em>análisis jurídico superior</em> y 
+          <em>diseño estratégico de élite</em> 
+          para casos complejos o de alta exposición que transforma desafíos jurídicos complejos en soluciones estratégicas ejecutables, 
+          combinando análisis legal sofisticado con visión estratégica para clientes que exigen el más alto nivel de excelencia profesional.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const textElement = document.querySelector('.qs-text');
+  
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            textElement.classList.add('show');
+          }
+        });
+      });
+  
+      observer.observe(textElement);
+    });
+  </script>
+  
+
+<section id="armonizacion">
+  <div class="container">
+      <h2>Armonización</h2>
+      <p>La armonización vertical y horizontal de bandos y reglamentos con las
+        las leyes federales y locales en nuestro país es un proceso legal y administrativo
+        fundamental para asegurar que las normas emitidas por los municipios y los
+        estados sean coherentes y compatibles con el marco jurídico nacional.
+      </p> 
+    </div>
+  </section>
+
+
+  <section id="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>¿Tienes alguna duda o deseas trabajar con nosotros? Contáctanos:</p>
+      <p>Email: <a href="mailto:correo@legaldraft.com">correo@legaldraft.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/521234567890" target="_blank">+52 123 456 7890</a></p>
+    </div>
+  </section>
+  
+
+  <footer class="footer animate-slide">
+    <div class="container">
+      <p>&copy; 2025 Legal Draft® | Todos los derechos reservados.</p>
+      <p>Diseñado con pasión y estrategia legal.</p>
+      <div class="social-icons">
+        <a href="#contacto" title="Ir a Contacto">
+          <i class="fas fa-envelope-open-text"></i>
+        </a>
+        <a href="https://wa.me/521234567890" target="_blank" title="Enviar WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
