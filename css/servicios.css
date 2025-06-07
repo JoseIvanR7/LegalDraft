@@ -1,0 +1,115 @@
+/* Estilos específicos para la página de servicios */
+.servicios-modernos {
+    background: linear-gradient(to bottom, #fdfdfd, #f4f4f4);
+    padding: 50px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.titulo-principal {
+    font-size: 2.5em;
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 1.5em;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card-servicio {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-servicio h3 {
+    color: #007B9E;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.card-servicio ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card-servicio li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #ccc;
+    font-size: 1em;
+    color: #333;
+}
+
+.card-servicio li:last-child {
+    border-bottom: none;
+}
+
+/* Nota técnica especializada */
+.nota-tecnica {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.nota-tecnica h2 {
+    color: #002244;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #105daa;
+}
+
+.nota-tecnica ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.nota-tecnica ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    color: #444;
+    font-size: 1.05em;
+    line-height: 1.6;
+}
+
+.nota-tecnica ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #105daa;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .grid-servicios {
+        grid-template-columns: 1fr;
+    }
+    
+    .card-servicio {
+        margin: 0 10px;
+    }
+} 
