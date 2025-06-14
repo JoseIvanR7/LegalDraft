@@ -1,59 +1,122 @@
 /* Estilos específicos para la página de servicios */
 .servicios-modernos {
-    background: linear-gradient(to bottom, #fdfdfd, #f4f4f4);
-    padding: 50px 20px;
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    padding: 80px 20px;
     font-family: 'Segoe UI', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.servicios-modernos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(to right, #002244, #105daa);
 }
 
 .titulo-principal {
-    font-size: 2.5em;
+    font-size: 2.8em;
     text-align: center;
-    color: #1a1a1a;
-    margin-bottom: 10px;
+    color: #002244;
+    margin-bottom: 20px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.titulo-principal::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, #002244, #105daa);
 }
 
 .subtitulo {
     text-align: center;
-    font-size: 1.5em;
-    color: #444;
-    margin-bottom: 40px;
+    font-size: 1.6em;
+    color: #105daa;
+    margin-bottom: 60px;
+    font-weight: 300;
 }
 
 .grid-servicios {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .card-servicio {
     background: white;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    padding: 25px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 35px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.card-servicio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #002244, #105daa);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
 }
 
 .card-servicio:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.card-servicio:hover::before {
+    transform: scaleX(1);
 }
 
 .card-servicio h3 {
-    color: #007B9E;
-    font-size: 1.3em;
-    margin-bottom: 15px;
+    color: #002244;
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    position: relative;
 }
 
 .card-servicio ul {
     list-style: none;
     padding-left: 0;
+    margin: 0;
 }
 
 .card-servicio li {
-    padding: 8px 0;
-    border-bottom: 1px dashed #ccc;
-    font-size: 1em;
-    color: #333;
+    padding: 12px 0;
+    border-bottom: 1px dashed rgba(0,0,0,0.1);
+    font-size: 1.1em;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card-servicio li:hover {
+    transform: translateX(10px);
+    color: #105daa;
 }
 
 .card-servicio li:last-child {
@@ -63,53 +126,151 @@
 /* Nota técnica especializada */
 .nota-tecnica {
     background: rgba(255, 255, 255, 0.95);
-    border-radius: 15px;
-    padding: 30px;
-    margin: 40px auto;
-    max-width: 900px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 50px;
+    margin: 80px auto;
+    max-width: 1000px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.nota-tecnica::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0,34,68,0.03) 0%, rgba(16,93,170,0.03) 100%);
+    z-index: 0;
+}
+
+.nota-tecnica > * {
+    position: relative;
+    z-index: 1;
 }
 
 .nota-tecnica h2 {
     color: #002244;
-    font-size: 2em;
+    font-size: 2.2em;
     text-align: center;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
     border-bottom: 3px solid #105daa;
+    position: relative;
+}
+
+.nota-tecnica p {
+    color: #2c3e50;
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.nota-tecnica strong {
+    color: #002244;
+    font-weight: 600;
+}
+
+.nota-tecnica em {
+    font-style: normal;
+    color: #105daa;
+    font-weight: 500;
 }
 
 .nota-tecnica ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0;
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
 .nota-tecnica ul li {
     position: relative;
-    padding-left: 25px;
-    margin-bottom: 15px;
-    color: #444;
-    font-size: 1.05em;
+    padding: 15px 25px;
+    color: #2c3e50;
+    font-size: 1.1em;
     line-height: 1.6;
+    background: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.nota-tecnica ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    background: white;
 }
 
 .nota-tecnica ul li::before {
     content: '•';
     position: absolute;
-    left: 0;
+    left: 10px;
     color: #105daa;
     font-size: 1.5em;
     line-height: 1;
 }
 
+/* Footer personalizado */
+footer {
+    background: #002244;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
 /* Media queries */
 @media (max-width: 768px) {
+    .servicios-modernos {
+        padding: 40px 15px;
+    }
+
+    .titulo-principal {
+        font-size: 2.2em;
+    }
+
+    .subtitulo {
+        font-size: 1.3em;
+        margin-bottom: 40px;
+    }
+
     .grid-servicios {
         grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 10px;
     }
     
     .card-servicio {
-        margin: 0 10px;
+        padding: 25px;
+    }
+
+    .nota-tecnica {
+        padding: 30px;
+        margin: 40px auto;
+    }
+
+    .nota-tecnica h2 {
+        font-size: 1.8em;
+    }
+
+    .nota-tecnica ul {
+        grid-template-columns: 1fr;
     }
 } 

@@ -1,0 +1,160 @@
+/* Estilos específicos para la página Saber Más */
+
+/* Contenedor principal */
+.saber-mas-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Sección de información */
+.info-section {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h2 {
+    color: #002244;
+    font-size: 2em;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #105daa;
+    position: relative;
+}
+
+.info-section p {
+    color: #2c3e50;
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Tarjetas de información */
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.info-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.info-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(to right, #002244, #105daa);
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.info-card:hover::before {
+    transform: scaleX(1);
+}
+
+.info-card h3 {
+    color: #160279;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* Lista de conceptos */
+.concepto-list {
+    list-style: none;
+    padding: 0;
+}
+
+.concepto-list li {
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #160279;
+    transition: transform 0.3s ease;
+}
+
+.concepto-list li:hover {
+    transform: translateX(10px);
+}
+
+.concepto-list strong {
+    color: #160279;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+/* Citas y referencias */
+.cita {
+    font-style: italic;
+    color: #666;
+    padding: 20px;
+    border-left: 3px solid #105daa;
+    margin: 20px 0;
+    background: #f8f9fa;
+}
+
+/* Botón de regreso */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #002244, #105daa);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.back-button:hover {
+    transform: translateX(-5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .saber-mas-container {
+        padding: 0 15px;
+        margin: 20px auto;
+    }
+
+    .info-section {
+        padding: 20px;
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card {
+        padding: 20px;
+    }
+
+    .concepto-list li {
+        margin-bottom: 10px;
+    }
+} 

@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to bottom right, #002244, #105daa);
+    background: linear-gradient(to bottom right, #002244, #160279);
     color: white;
     overflow-x: hidden;
 }
@@ -27,11 +27,17 @@ body {
     margin-bottom: 0.5rem;
     letter-spacing: 2px;
     font-weight: 700;
+    transition: all 0.3s ease;
 }
 
 .header-text h1 sup {
     font-size: 1rem;
     top: -1em;
+}
+
+.header-text h1:hover {
+    text-shadow: 0 0 10px rgba(230, 184, 0, 0.5);
+    letter-spacing: 4px;
 }
 
 .header-subtitle {
@@ -47,6 +53,13 @@ body {
 .highlight {
     color: #e6b800;
     font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.highlight:hover {
+    transform: translateY(-2px);
+    text-shadow: 0 4px 8px rgba(230, 184, 0, 0.5);
 }
 
 .separator {
@@ -61,10 +74,16 @@ body {
 }
 
 .logo {
-    width: 80px;
+    width: 120px;
     height: auto;
     margin-right: 2rem;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 15px rgba(230, 184, 0, 0.8));
+    transform: scale(1.05);
 }
 
 /* Navegación común */
@@ -103,8 +122,8 @@ nav.nav-cards {
 
 /* Footer común */
 .pre-footer {
-    background-color: #ffffff;
-    color: #0e00ad;
+    background-color: #160279;
+    color: #ffffff;
     padding: 50px 20px;
 }
 
@@ -124,11 +143,11 @@ nav.nav-cards {
 .footer-col h3 {
     font-size: 1.2em;
     margin-bottom: 15px;
-    color: #160279;
+    color: #ffffff;
 }
 
 .footer-col p, .footer-col a {
-    color: #160279;
+    color: #ffffff;
     text-decoration: none;
     font-size: 0.95em;
 }
@@ -143,7 +162,7 @@ nav.nav-cards {
 }
 
 .footer-col ul li a {
-    color: #160279;
+    color: #ffffff;
     transition: color 0.3s ease;
 }
 
@@ -204,6 +223,23 @@ nav.nav-cards {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+.typing-text {
+    border-right: 2px solid #e6b800;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #e6b800 }
 }
 
 /* Media queries comunes */
