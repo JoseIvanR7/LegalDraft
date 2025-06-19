@@ -1,5 +1,31 @@
 /* Estilos específicos para la página Saber Más */
 
+/* Sección introductoria */
+.intro-section {
+    background: linear-gradient(to right, #002244, #105daa);
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    will-change: opacity, transform;
+}
+
+.intro-section h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    will-change: opacity, transform;
+    position: relative;
+}
+
+.intro-section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0;
+}
+
 /* Contenedor principal */
 .saber-mas-container {
     max-width: 1200px;
@@ -156,5 +182,99 @@
 
     .concepto-list li {
         margin-bottom: 10px;
+    }
+}
+
+/* Footer Saber Más */
+.footer-sabermas {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0 20px 0;
+    font-size: 1.1em;
+    margin-top: 40px;
+}
+
+.footer-sabermas-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    letter-spacing: 1px;
+}
+
+/* Nota Técnica Especializada */
+.nota-tecnica {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 35px 30px 30px 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nota-tecnica h2 {
+    color: #002244;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #105daa;
+    letter-spacing: 1px;
+}
+
+.nota-tecnica p {
+    color: #2c3e50;
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.nota-tecnica ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.nota-tecnica ul li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    color: #444;
+    font-size: 1.08em;
+    line-height: 1.6;
+}
+
+.nota-tecnica ul li::before {
+    content: '\2022';
+    position: absolute;
+    left: 0;
+    color: #105daa;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+.nota-tecnica strong {
+    color: #105daa;
+    font-weight: 600;
+}
+
+.nota-tecnica em {
+    color: #002244;
+    font-style: normal;
+    font-weight: 500;
+    background: linear-gradient(120deg, rgba(16, 93, 170, 0.08) 0%, rgba(16, 93, 170, 0.08) 100%);
+    padding: 0 4px;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+    .nota-tecnica {
+        padding: 20px 10px;
+    }
+    .nota-tecnica ul {
+        max-width: 100%;
     }
 } 

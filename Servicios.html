@@ -75,29 +75,17 @@
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="nota-tecnica">
-        <h2>NOTA TÉCNICA ESPECIALIZADA</h2>
-        <p>
-          <strong>Todos</strong> nuestros servicios <em>integran el</em> análisis de congruencia
-          <em>VERTICAL y HORIZONTAL ACTUALIZADA</em> entre:
-        </p>
-
-        <ul>
-          <li>Constitución Federal y tratados internacionales</li>
-          <li>Leyes Generales y Federales aplicables</li>
-          <li>Constituciones Estatales y legislación local</li>
-          <li>Bandos Municipales</li>
-          <li>Reglamentación secundaria</li>
-          <li>Normativa interna y privada</li>
-        </ul>
-      </div>
+    <section class="agendar-cita">
+      <h2>¿Estás listo para agendar una cita?</h2>
+      <a href="index.html#contacto" class="btn-agendar">Agendar cita</a>
     </section>
 
     <!-- Pie de página -->
     <footer>
       <div class="container">
-        <p>&copy; 2025 Legal Draft® - Todos los derechos reservados</p>
+        <p>&copy; 2025 Legal Draft® | Todos los derechos reservados.</p>
       </div>
     </footer>
 
@@ -121,39 +109,6 @@
           card.style.transition = 'all 0.5s ease-out';
           observerCards.observe(card);
         });
-
-        // Animación para la nota técnica
-        const notaTecnica = document.querySelector('.nota-tecnica');
-        const notaTecnicaItems = document.querySelectorAll('.nota-tecnica ul li');
-        
-        const observerNota = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.style.opacity = '1';
-              entry.target.style.transform = 'translateX(0)';
-              
-              // Animar los items de la lista con delay
-              notaTecnicaItems.forEach((item, index) => {
-                setTimeout(() => {
-                  item.style.opacity = '1';
-                  item.style.transform = 'translateX(0)';
-                }, index * 200);
-              });
-            }
-          });
-        }, { threshold: 0.2 });
-
-        notaTecnica.style.opacity = '0';
-        notaTecnica.style.transform = 'translateX(-50px)';
-        notaTecnica.style.transition = 'all 0.8s ease-out';
-        
-        notaTecnicaItems.forEach(item => {
-          item.style.opacity = '0';
-          item.style.transform = 'translateX(-30px)';
-          item.style.transition = 'all 0.5s ease-out';
-        });
-
-        observerNota.observe(notaTecnica);
 
         // Efecto hover mejorado para las tarjetas
         cards.forEach(card => {

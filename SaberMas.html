@@ -28,6 +28,27 @@
   </header>
 
   <main class="saber-mas-container">
+    <section class="intro-section">
+      <h2>¿Porqué elegir a Legal Draft®?</h2>
+      <p>Somos especialistas en la armonización y actualización del marco juridico municipal, estatal y federal. Nuestro equipo ofrece soluciones integrales para gobiernos, instituciones y particulares que buscan seguridad juridica, cumplimiento normativo y excelencia em la gestión legal.</p>
+    </section>
+
+    <section class="nota-tecnica">
+      <h2>NOTA TÉCNICA ESPECIALIZADA</h2>
+      <p>
+        <strong>Todos</strong> nuestros servicios <em>integran el</em> análisis de congruencia
+        <em>VERTICAL y HORIZONTAL ACTUALIZADA</em> entre:
+      </p>
+      <ul>
+        <li>Constitución Federal y tratados internacionales</li>
+        <li>Leyes Generales y Federales aplicables</li>
+        <li>Constituciones Estatales y legislación local</li>
+        <li>Bandos Municipales</li>
+        <li>Reglamentación secundaria</li>
+        <li>Normativa interna y privada</li>
+      </ul>
+    </section>
+
     <section class="info-section">
       <h2>Conceptos Fundamentales del Derecho</h2>
       <p>El derecho es un sistema de normas, principios y regulaciones que rigen la conducta humana en sociedad. Su comprensión es fundamental para el desarrollo de una sociedad justa y equitativa.</p>
@@ -41,6 +62,53 @@
         <div class="info-card">
           <h3>Derecho Constitucional</h3>
           <p>Rama del derecho público que estudia las normas que regulan la organización fundamental del Estado, los derechos fundamentales y las relaciones entre los poderes públicos.</p>
+        </div>
+      </div>
+
+      <div class = "info-cards">
+        <div class="info-card">
+          <h3>Derecho Público</h3>
+          <p>El derecho público es el conjunto de normas jurídicas que regulan las relaciones en las que el Estado interviene como autoridad soberana, ya sea frente a los particulares o entre órganos del propio poder público.</p>
+        </div>
+        <div class="info-card">
+          <h3>Derecho Administrativo</h3>
+          <p>Es el conjunto de normas que regula el funcionamiento del Estado como poder administrador, entre los distintos órganos administrativos y su relación con los particulares.</p>
+        </div>
+        <div class="info-card">
+          <h3>Derecho Constitucional o Político</h3>
+          <p>Se ocupa del análisis de las leyes fundamentales que definen un Estado.</p>
+        </div>
+        <div class="info-card">
+          <h3>Derecho Penal</h3>
+          <p>Comprende las normas que regulan las conductas punibles de los habitantes, aquellas que se consideran delictivas, para las cuales las normas jurídicas tienen prevista una sanción. La tipicidad de las normas penales es un rasgo característico, ya que para que una conducta sea susceptible de sanción penal, debe coincidir con la descrita por la norma, sin poder aplicarse la analogía.</p>
+        </div>
+        <div class="info-card">
+          <h3>Derecho Procesal</h3>
+          <p>Regula la organización y las atribuciones de los tribunales de justicia y la actuación de las distintas personas que intervienen en los procesos judiciales.</p>
+        </div>
+        <div class="info-card">
+          <h3>Derecho Laboral</h3>
+          <p>Se refiere a las relaciones entre los patrones y sus empleados, fijando sus deberes y derechos recíprocos, así como la protección del trabajador.</p>
+        </div>
+        <div class="info-card">
+          <h3>Derecho Tributario</h3>
+          <p>Es el conjunto de reglas, normas y principios que se encargan de regular la relación jurídico-tributaria entre la administración y el contribuyente.</p>
+        </div>
+        <div class="info-card">
+          <h3>Derecho Privado</h3>
+          <p>El derecho privado es el conjunto de normas que rigen las relaciones entre los particulares, considerados como tales, es decir, sin que intervenga el Estado como autoridad.</p>
+        </div>
+        <div class="info-card">
+          <h3>Derecho Civil</h3>
+          <p>Regula las relaciones entre particulares, ya sean personas físicas o jurídicas, o el propio Estado, cuando no lo hace en ejercicio de su poder como autoridad pública. Es la más utilizada entre las ramas del Derecho, pues comprende las relaciones patrimoniales, personales, de vecindad, de familia, de derecho sucesorio, entre otros.</p>
+        </div>
+        <div class="info-card">
+          <h3>Derecho Comercial o Mercantil</h3>
+          <p>Se encarga de regular la actividad de los comerciantes y sus relaciones comerciales, denominadas actos de comercio.</p>
+        </div>
+        <div class="info-card">
+          <h3>Derecho Social</h3>
+          <p>Las ramas del derecho social son: derecho al trabajo, derecho a la seguridad social, derecho migratorio y derecho agrario.<br><br>El derecho social es un concepto unificado del derecho, que sustituye a la división clásica del derecho público y del derecho privado.</p>
         </div>
       </div>
     </section>
@@ -79,5 +147,25 @@
       <i class="fas fa-arrow-left"></i> Volver al Inicio
     </a>
   </main>
+
+  <footer class="footer-sabermas">
+    <div class="footer-sabermas-content">
+      <p>&copy; 2025 Legal Draft® | Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const introTitle = document.querySelector('.intro-section h2');
+      introTitle.style.opacity = '0';
+      introTitle.style.transform = 'translateY(-20px)';
+      
+      setTimeout(() => {
+        introTitle.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
+        introTitle.style.opacity = '1';
+        introTitle.style.transform = 'translateY(0)';
+      }, 300);
+    });
+  </script>
 </body>
 </html>

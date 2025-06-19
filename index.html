@@ -75,7 +75,7 @@
     <div class="slider-container">
       <div class="slider-wrapper">
         <div class="slide">
-          <img src="Imagenes/Imagen1.jpg" alt="Imagen 1" />
+          <img src="Imagenes/Imagen3.png" alt="Imagen 1" />
         </div>
         <div class="slide">
           <img src="Imagenes/Imagen2.jpg" alt="Imagen 2" />
@@ -172,11 +172,11 @@
             <div class="contacto-item">
                 <i class="fas fa-envelope"></i>
                 <h3>Correo Electrónico</h3>
-                <a href="mailto:21030205@itesa.edu.mx" class="email-link">
+                <a href="mailto:lotalma1@gmail.com" class="email-link">
                     <i class="fas fa-envelope"></i>
-                    22030040@itesa.edu.mx
+                    lotalma1@gmail.com
                 </a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=22030040@itesa.edu.mx" target="_blank" class="gmail-link">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lotalma1@gmail.com" target="_blank" class="gmail-link">
                     <i class="fab fa-google"></i>
                     Abrir en Gmail
                 </a>
@@ -201,11 +201,11 @@
                     
                     <div class="whatsapp-number">
                         <span class="number-label">Número 2:</span>
-                        <a href="https://wa.me/527911721379" target="_blank" class="whatsapp-mobile">
+                        <a href="https://wa.me/527751032880" target="_blank" class="whatsapp-mobile">
                             <i class="fab fa-whatsapp"></i>
                             WhatsApp Móvil
                         </a>
-                        <a href="https://web.whatsapp.com/send?phone=527911721379" target="_blank" class="whatsapp-web">
+                        <a href="https://web.whatsapp.com/send?phone=527751032880" target="_blank" class="whatsapp-web">
                             <i class="fas fa-desktop"></i>
                             WhatsApp Web
                         </a>
@@ -250,21 +250,14 @@
     <div class="footer-col">
       <h3>Navegación</h3>
       <ul>
-        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="index.html">Inicio</a></li>
         <li><a href="#quienes-somos">Quiénes somos</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-
+        <li><a href="servicios.html">Servicios</a></li>
         <li><a href="#contacto">Contacto</a></li>
-        <li><a href="#saber-mas">Para saber más</a></li>
       </ul>
     </div>
 
-    <div class="footer-col">
-      <h3>Datos de Contacto</h3>
-      <p>📧 21030205@itesa.edu.mx</p>
-      <p>📞 791 100 0069 y 775 103 2880</p>
-      <p>📍 Francisco Primo de Verdad 11, colonia Dina, Ciudad Sahagún, Hidalgo.</p>
-    </div>
+    <div class="footer-line"></div>
 
     <div class="footer-col">
       <h3>Para saber más...</h3>
@@ -272,7 +265,7 @@
       <p>
         El concepto de derecho proviene del latín "directum", que significa aquello que está conforme a la regla.
       </p>
-      <a href="#saber-mas">Más información…</a>
+      <a href="SaberMas.html">Más información…</a>
     </div>
   </div>
 </section>
@@ -281,7 +274,6 @@
   <footer class="footer animate-slide">
     <div class="container">
       <p>&copy; 2025 Legal Draft® | Todos los derechos reservados.</p>
-      <p>Diseñado con pasión y estrategia legal.</p>
     </div>
   </footer>
   
@@ -517,6 +509,26 @@
         const mouseY = e.clientY / window.innerHeight - 0.5;
         logo.style.transform = `translate(${mouseX * 10}px, ${mouseY * 10}px)`;
       });
+    });
+  </script>
+
+  <script>
+    // Animación de brillo para todos los logos
+    document.addEventListener('DOMContentLoaded', function() {
+      const logos = document.querySelectorAll('.logo-footer');
+      setInterval(() => {
+        logos.forEach(logo => {
+          logo.style.transition = 'box-shadow 0.7s, filter 0.7s';
+          logo.style.boxShadow = '0 0 40px 10px #ffeecc, 0 0 80px 20px #e6b80044';
+          logo.style.filter = 'brightness(1.2)';
+        });
+        setTimeout(() => {
+          logos.forEach(logo => {
+            logo.style.boxShadow = 'none';
+            logo.style.filter = 'none';
+          });
+        }, 700);
+      }, 3500);
     });
   </script>
 </body>
