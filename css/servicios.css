@@ -221,4 +221,42 @@ footer p {
         font-size: 1em;
         padding: 12px 25px;
     }
-} 
+    
+}
+
+/* Botón volver al inicio */
+.btn-volver-inicio {
+    display: inline-block;
+    background: #fff;
+    color: #105daa;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 12px 32px;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(16,93,170,0.10);
+    border: 2px solid #105daa;
+    transition: background 0.3s, color 0.3s, transform 0.2s, border 0.3s;
+    margin-top: 10px;
+}
+
+.btn-volver-inicio:hover {
+    background: #105daa;
+    color: #fff;
+    border-color: #002244;
+    transform: translateY(-3px) scale(1.04);
+}
+
+/* Versión responsive */
+@media (max-width: 768px) {
+    .btn-volver-inicio {
+        background: #fff;
+        color: #105daa;
+        border: 2px solid #105daa;
+    }
+    .btn-volver-inicio:hover {
+        background: #105daa;
+        color: #fff;
+        border-color: #002244;
+    }
+}
