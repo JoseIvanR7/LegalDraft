@@ -74,9 +74,9 @@ body {
 }
 
 .logo {
-    width: 120px;
+    width: 180px;
     height: auto;
-    margin-right: 2rem;
+    margin-right: 3rem;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
     transition: all 0.3s ease;
 }
@@ -123,8 +123,8 @@ nav.nav-cards {
 
 /* Footer común */
 .pre-footer {
-    background-color: #a6a4a4c5;
-    color: #0e00ad;
+    background-color: #08888cc5;
+    color: #ffffff;
     padding: 50px 20px;
     margin-bottom: 0;
 }

@@ -123,6 +123,19 @@
     border-bottom: none;
 }
 
+.card-servicio p.descripcion-card {
+    font-size: 1.05em;
+    color: #4a5568;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed rgba(0,0,0,0.1);
+}
+
+.card-servicio li strong {
+    color: #0d47a1;
+    font-weight: 600;
+}
+
 /* Footer personalizado */
 footer {
     background: #000000;
@@ -221,4 +234,89 @@ footer p {
         font-size: 1em;
         padding: 12px 25px;
     }
-} 
+}
+
+.cita-legal {
+  background: #f5f7fa;
+  border-left: 6px solid #105daa;
+  border-radius: 10px;
+  margin: 0 auto 40px auto;
+  padding: 30px 30px 20px 30px;
+  max-width: 900px;
+  box-shadow: 0 4px 18px rgba(16,93,170,0.07);
+  font-size: 1.18em;
+  color: #1a2636;
+  position: relative;
+  font-style: italic;
+}
+.cita-legal::before {
+  content: '\201C';
+  font-size: 3em;
+  color: #105daa;
+  position: absolute;
+  left: 18px;
+  top: 10px;
+  opacity: 0.2;
+}
+.cita-legal p {
+  margin-bottom: 10px;
+}
+
+.animate-cita {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.animate-cita.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .cita-legal {
+    padding: 18px 10px 12px 18px;
+    font-size: 1em;
+  }
+  .cita-legal::before {
+    left: 8px;
+    top: 2px;
+    font-size: 2em;
+  }
+}
+
+/* Botón volver al inicio */
+.btn-volver-inicio {
+    display: inline-block;
+    background: #fff;
+    color: #105daa;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 12px 32px;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(16,93,170,0.10);
+    border: 2px solid #105daa;
+    transition: background 0.3s, color 0.3s, transform 0.2s, border 0.3s;
+    margin-top: 10px;
+}
+
+.btn-volver-inicio:hover {
+    background: #105daa;
+    color: #fff;
+    border-color: #002244;
+    transform: translateY(-3px) scale(1.04);
+}
+
+/* Versión responsive */
+@media (max-width: 768px) {
+    .btn-volver-inicio {
+        background: #fff;
+        color: #105daa;
+        border: 2px solid #105daa;
+    }
+    .btn-volver-inicio:hover {
+        background: #105daa;
+        color: #fff;
+        border-color: #002244;
+    }
+}
