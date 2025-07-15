@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Legal Draft®</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="icon" href="Iconos/LegalDraft.ico" type="image/x-icon"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <header id="inicio">
+    <div class="scrolling-header">
+      <img src="Iconos/LegalDraft.ico" alt="Logo Legal Draft" class="logo" />
+      <div class="header-text">
+        <h1>LEGAL DRAFT<sup>®</sup></h1>
+        <div class="header-subtitle">
+          <span class="highlight">Excelencia Jurídica</span>
+          <span class="separator">|</span>
+          <span class="highlight">Estrategia Legal</span>
+          <span class="separator">|</span>
+          <span class="highlight">Soluciones Efectivas</span>
+        </div>
+        <h2>Despacho Jurídico Especializado en Derecho Municipal y Estatal</h2>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav-cards">
+    <div class="nav-option">
+      <a href="index.html">
+        <img src="Iconos/Inicio.ico" alt="Inicio" />
+        <span>Inicio</span>
+      </a>
+    </div>
+
+    <div class="nav-option">
+      <a href="#quienes-somos">
+        <img src="Iconos/QuienesSomos.ico" alt="¿Quiénes somos?" />
+        <span>¿Quiénes somos?</span>
+      </a>
+    </div>
+
+    <div class="nav-option">
+      <a href="#armonizacion">
+        <img src="Iconos/Armonizacion.ico" alt="Armonizacion" />
+        <span>Armonización</span>
+      </a>
+    </div>
+
+    <div class="nav-option">
+      <a href="servicios.html">
+        <img src="Iconos/Servicios.ico" alt="Servicios" />
+        <span>Servicios</span>
+      </a>
+    </div>
+    <div class="nav-option">
+      <a href="#contacto">
+        <img src="Iconos/Contacto.ico" alt="Contacto" />
+        <span>Contacto</span>
+      </a>
+    </div>
+    <div class="nav-option">
+      <a href="SaberMas.html">
+        <img src="Iconos/SaberMas.ico" alt="Saber más" />
+        <span>Saber más</span>
+      </a>
+    </div>
+  </nav>
+
+  <section id="slider">
+    <div class="slider-container">
+      <div class="slider-wrapper">
+        <div class="slide">
+          <img src="Imagenes/Imagen3.png" alt="Imagen 1" />
+        </div>
+        <div class="slide">
+          <img src="Imagenes/Imagen2.jpg" alt="Imagen 2" />
+        </div>
+        <div class="slide">
+          <img src="Imagenes/Imagen5.webp" alt="Imagen 3" />
+        </div>
+        <div class="slide">
+          <img src="Imagenes/Imagen4.jpg" alt="Imagen 4" />
+        </div>
+      </div>
+      
+      <button class="slider-button prev" aria-label="Anterior">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="slider-button next" aria-label="Siguiente">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      
+      <div class="slider-dots">
+        <button class="dot active" aria-label="Ir a imagen 1"></button>
+        <button class="dot" aria-label="Ir a imagen 2"></button>
+        <button class="dot" aria-label="Ir a imagen 3"></button>
+        <button class="dot" aria-label="Ir a imagen 4"></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="quienes-somos">
+    <div class="container quienes-somos-container">
+      <div class="qs-image">
+        <img src="Imagenes/Imagen4.jpg" alt="Imagen 4" />
+      </div>
+      <div class="qs-text">
+        <h2>¿Quiénes somos?</h2>
+        <p>
+          <strong>Legal Draft®</strong> es una firma especializada en <em>análisis jurídico superior</em> y 
+          <em>diseño estratégico de élite</em> 
+          para casos complejos o de alta exposición que transforma desafíos jurídicos complejos en soluciones estratégicas ejecutables, 
+          combinando análisis legal sofisticado con visión estratégica para clientes que exigen el más alto nivel de excelencia profesional.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const textElement = document.querySelector('.qs-text');
+  
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            textElement.classList.add('show');
+          }
+        });
+      });
+  
+      observer.observe(textElement);
+    });
+  </script>
+  
+
+<section id="armonizacion">
+  <div class="container">
+      <h2>Armonización</h2>
+      <p>La armonización vertical y horizontal de bandos y reglamentos con las
+        las leyes federales y locales en nuestro país es un proceso legal y administrativo
+        fundamental para asegurar que las normas emitidas por los municipios y los
+        estados sean coherentes y compatibles con el marco jurídico nacional.
+      </p> 
+    </div>
+  </section>
+
+  <div class="video-container">
+    <h2>Video relacionado</h2>
+    <iframe
+      src="https://www.youtube.com/embed/CdXH7cyaDFo"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  
+  <section id="contacto">
+    <div class="contacto-container">
+        <div class="contacto-header">
+            <h2>Contacto</h2>
+            <p>Estamos aquí para ayudarte. No dudes en contactarnos para cualquier consulta o servicio que necesites.</p>
+        </div>
+        
+        <div class="contacto-info">
+            <div class="contacto-item">
+                <i class="fas fa-envelope"></i>
+                <h3>Correo Electrónico</h3>
+                <a href="mailto:lotalma1@gmail.com" class="email-link">
+                    <i class="fas fa-envelope"></i>
+                    lotalma1@gmail.com
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lotalma1@gmail.com" target="_blank" class="gmail-link">
+                    <i class="fab fa-google"></i>
+                    Abrir en Gmail
+                </a>
+                <p>Respuesta en menos de 24 horas</p>
+            </div>
+
+            <div class="contacto-item">
+                <i class="fab fa-whatsapp"></i>
+                <h3>WhatsApp</h3>
+                <div class="whatsapp-container">
+                    <div class="whatsapp-number">
+                        <span class="number-label">Número 1:</span>
+                        <a href="https://wa.me/527753673729" target="_blank" class="whatsapp-mobile">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp Móvil
+                        </a>
+                        <a href="https://web.whatsapp.com/send?phone=527753673729" target="_blank" class="whatsapp-web">
+                            <i class="fas fa-desktop"></i>
+                            WhatsApp Web
+                        </a>
+                    </div>
+                    
+                    <div class="whatsapp-number">
+                        <span class="number-label">Número 2:</span>
+                        <a href="https://wa.me/527711269004" target="_blank" class="whatsapp-mobile">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp Móvil
+                        </a>
+                        <a href="https://web.whatsapp.com/send?phone=527711269004" target="_blank" class="whatsapp-web">
+                            <i class="fas fa-desktop"></i>
+                            WhatsApp Web
+                        </a>
+                    </div>
+                </div>
+                <p>Atención inmediata</p>
+                <script>
+                    // Detectar si es dispositivo móvil
+                    function isMobile() {
+                        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+                    }
+
+                    // Ajustar enlaces de WhatsApp Web en dispositivos móviles
+                    if (isMobile()) {
+                        document.querySelectorAll('.whatsapp-web').forEach(link => {
+                            const phone = link.href.split('phone=')[1];
+                            link.href = `https://wa.me/${phone}`;
+                        });
+                    }
+                </script>
+            </div>
+
+            <div class="contacto-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Ubicación</h3>
+                <p>Francisco Primo de Verdad 11,<br>colonia Dina,<br>Ciudad Sahagún, Hidalgo.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+  <section class="pre-footer">
+  <div class="container-footer">
+    <div class="footer-col">
+      <img src="Iconos/LegalDraft.ico" alt="Logo" class="logo-footer">
+      <p>
+        Nos desempeñamos con honestidad, justicia, persistencia y tenacidad, así como pragmatismo.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Navegación</h3>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#quienes-somos">Quiénes somos</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-line"></div>
+
+    <div class="footer-col">
+      <h3>Para saber más...</h3>
+      <strong>DERECHO</strong>
+      <p>
+        El concepto de derecho proviene del latín "directum", que significa aquello que está conforme a la regla.
+      </p>
+      <a href="SaberMas.html">Más información…</a>
+    </div>
+  </div>
+</section>
+  
+
+  <footer class="footer animate-slide">
+    <div class="container">
+      <p>&copy; 2025 Legal Draft® | Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+  <script>
+    class Slider {
+      constructor() {
+        this.sliderWrapper = document.querySelector('.slider-wrapper');
+        this.slides = document.querySelectorAll('.slide');
+        this.dots = document.querySelectorAll('.dot');
+        this.prevButton = document.querySelector('.prev');
+        this.nextButton = document.querySelector('.next');
+        this.currentSlide = 0;
+        this.totalSlides = this.slides.length;
+        this.slideInterval = null;
+        this.autoPlayDelay = 5000;
+        this.isTransitioning = false;
+
+        this.init();
+      }
+
+      init() {
+        // Configurar los event listeners
+        this.prevButton.addEventListener('click', () => this.navigate('prev'));
+        this.nextButton.addEventListener('click', () => this.navigate('next'));
+        this.dots.forEach((dot, index) => {
+          dot.addEventListener('click', () => this.goToSlide(index));
+        });
+
+        // Event listeners para pausar/reanudar en hover
+        this.sliderWrapper.addEventListener('mouseenter', () => this.pauseAutoPlay());
+        this.sliderWrapper.addEventListener('mouseleave', () => this.startAutoPlay());
+
+        // Configurar touch events para móviles
+        this.setupTouchEvents();
+
+        // Configurar transición
+        this.sliderWrapper.style.transition = 'transform 0.5s ease-in-out';
+
+        // Iniciar autoplay
+        this.startAutoPlay();
+
+        // Añadir efecto de fade a los botones
+        this.setupButtonFade();
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowLeft') this.navigate('prev');
+          if (e.key === 'ArrowRight') this.navigate('next');
+        });
+      }
+
+      navigate(direction) {
+        if (this.isTransitioning) return;
+        this.isTransitioning = true;
+
+        const newIndex = direction === 'next' 
+          ? (this.currentSlide + 1) % this.totalSlides
+          : (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
+
+        this.goToSlide(newIndex);
+
+        setTimeout(() => {
+          this.isTransitioning = false;
+        }, 500);
+      }
+
+      goToSlide(index) {
+        if (index === this.currentSlide) return;
+
+        // Añadir clase para la animación de salida
+        this.slides[this.currentSlide].classList.add('fade-out');
+
+        this.currentSlide = index;
+        
+        // Actualizar la transformación del wrapper
+        this.sliderWrapper.style.transform = `translateX(-${this.currentSlide * 100}%)`;
+        
+        // Actualizar dots
+        this.updateDots();
+
+        // Añadir clase para la animación de entrada
+        this.slides[this.currentSlide].classList.remove('fade-out');
+        this.slides[this.currentSlide].classList.add('fade-in');
+
+        // Reset del autoplay
+        this.resetAutoPlay();
+      }
+
+      updateDots() {
+        this.dots.forEach((dot, index) => {
+          if (index === this.currentSlide) {
+            dot.classList.add('active');
+            dot.setAttribute('aria-current', 'true');
+          } else {
+            dot.classList.remove('active');
+            dot.setAttribute('aria-current', 'false');
+          }
+        });
+      }
+
+      setupTouchEvents() {
+        let touchStartX = 0;
+        let touchEndX = 0;
+        const swipeThreshold = 50;
+
+        this.sliderWrapper.addEventListener('touchstart', e => {
+          touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        this.sliderWrapper.addEventListener('touchend', e => {
+          touchEndX = e.changedTouches[0].screenX;
+          const diff = touchStartX - touchEndX;
+
+          if (Math.abs(diff) > swipeThreshold) {
+            this.navigate(diff > 0 ? 'next' : 'prev');
+          }
+        }, { passive: true });
+      }
+
+      setupButtonFade() {
+        const buttons = [this.prevButton, this.nextButton];
+        buttons.forEach(button => {
+          button.style.opacity = '0';
+          button.style.transition = 'opacity 0.3s ease';
+        });
+
+        this.sliderWrapper.addEventListener('mouseenter', () => {
+          buttons.forEach(button => button.style.opacity = '1');
+        });
+
+        this.sliderWrapper.addEventListener('mouseleave', () => {
+          buttons.forEach(button => button.style.opacity = '0');
+        });
+      }
+
+      startAutoPlay() {
+        if (this.slideInterval) return;
+        this.slideInterval = setInterval(() => this.navigate('next'), this.autoPlayDelay);
+      }
+
+      pauseAutoPlay() {
+        if (this.slideInterval) {
+          clearInterval(this.slideInterval);
+          this.slideInterval = null;
+        }
+      }
+
+      resetAutoPlay() {
+        this.pauseAutoPlay();
+        this.startAutoPlay();
+      }
+    }
+
+    // Inicializar el slider cuando el DOM esté listo
+    document.addEventListener('DOMContentLoaded', () => {
+      new Slider();
+
+      // Precargar las imágenes para una transición más suave
+      const images = document.querySelectorAll('.slide img');
+      images.forEach(img => {
+        const src = img.getAttribute('src');
+        if (src) {
+          const preloadImg = new Image();
+          preloadImg.src = src;
+        }
+      });
+    });
+  </script>
+
+  <style>
+    /* Estilos para las animaciones del slider */
+    .slide {
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .slide.fade-out {
+      opacity: 0;
+    }
+
+    .slide.fade-in {
+      opacity: 1;
+    }
+
+    .slider-button {
+      opacity: 0;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .slider-button:hover {
+      transform: scale(1.1);
+    }
+
+    .dot {
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .dot:hover {
+      transform: scale(1.2);
+    }
+
+    .dot.active {
+      transform: scale(1.1);
+    }
+  </style>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Efecto de typing para el subtítulo
+      const subtitle = document.querySelector('.header-text h2');
+      const subtitleText = subtitle.textContent;
+      subtitle.classList.add('typing-text');
+      subtitle.style.width = '0';
+      
+      setTimeout(() => {
+        subtitle.style.animation = 'typing 3.5s steps(40, end) forwards, blink-caret .75s step-end infinite';
+      }, 500);
+
+      // Efecto de brillo aleatorio para los highlights
+      const highlights = document.querySelectorAll('.highlight');
+      setInterval(() => {
+        const randomHighlight = highlights[Math.floor(Math.random() * highlights.length)];
+        randomHighlight.style.textShadow = '0 0 10px rgba(230, 184, 0, 0.8)';
+        setTimeout(() => {
+          randomHighlight.style.textShadow = 'none';
+        }, 1000);
+      }, 2000);
+
+      // Efecto de parallax suave para el logo
+      const logo = document.querySelector('.logo');
+      document.addEventListener('mousemove', (e) => {
+        const mouseX = e.clientX / window.innerWidth - 0.5;
+        const mouseY = e.clientY / window.innerHeight - 0.5;
+        logo.style.transform = `translate(${mouseX * 10}px, ${mouseY * 10}px)`;
+      });
+    });
+  </script>
+
+  <script>
+    // Animación de brillo para todos los logos
+    document.addEventListener('DOMContentLoaded', function() {
+      const logos = document.querySelectorAll('.logo-footer');
+      setInterval(() => {
+        logos.forEach(logo => {
+          logo.style.transition = 'box-shadow 0.7s, filter 0.7s';
+          logo.style.boxShadow = '0 0 40px 10px #ffeecc, 0 0 80px 20px #e6b80044';
+          logo.style.filter = 'brightness(1.2)';
+        });
+        setTimeout(() => {
+          logos.forEach(logo => {
+            logo.style.boxShadow = 'none';
+            logo.style.filter = 'none';
+          });
+        }, 700);
+      }, 3500);
+    });
+  </script>
+</body>
+</html>
