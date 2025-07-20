@@ -15,7 +15,7 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(to right, #002244, #105daa);
+    background: linear-gradient(to right, #024, #105daa);
 }
 
 .quienes-somos-container {
@@ -40,7 +40,6 @@
     top: 20px;
     left: 20px;
     right: -20px;
-    bottom: -20px;
     border: 2px solid #160279;
     z-index: 1;
     transition: all 0.3s ease;
@@ -50,7 +49,7 @@
     width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 15px 30px rgb(0 0 0 / 15%);
     position: relative;
     z-index: 2;
     transition: transform 0.5s ease, filter 0.5s ease;
@@ -79,7 +78,7 @@
 
 .qs-text h2 {
     font-size: 2.5em;
-    color: #002244;
+    color: #024;
     margin-bottom: 30px;
     position: relative;
     padding-bottom: 15px;
@@ -111,14 +110,13 @@
 
 .qs-text em {
     font-style: normal;
-    color: #002244;
+    color: #024;
     font-weight: 500;
-    background: linear-gradient(120deg, rgba(16, 93, 170, 0.2) 0%, rgba(16, 93, 170, 0.2) 100%);
-    padding: 0 5px;
+    background: linear-gradient(120deg, rgb(16 93 170 / 20%), rgb(16 92 170 / 20%));
 }
 
 /* Animación de entrada */
-@keyframes fadeInUp {
+@keyframes fade-in-up {
     from {
         opacity: 0;
         transform: translateY(30px);
@@ -131,14 +129,14 @@
 
 /* Sección Armonización */
 #armonizacion {
-    background: linear-gradient(135deg, #ffffff, #e6f0ff);
+    background: linear-gradient(135deg, #fff, #e6f0ff);
     padding: 60px 20px;
     text-align: center;
     border-radius: 20px;
     margin: 40px auto;
     max-width: 1000px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-    animation: fadeInUp 1.2s ease-in-out;
+    box-shadow: 0 8px 20px rgb(0 0 0 / 10%);
+    animation: fade-in-up 1.2s ease-in-out;
 }
 
 #armonizacion h2 {
@@ -152,7 +150,7 @@
 
 #armonizacion p {
     font-size: 20px;
-    color: #333333;
+    color: #333;
     line-height: 1.7;
     max-width: 900px;
     margin: 0 auto;
@@ -166,7 +164,7 @@
     margin: 0;
     overflow: hidden;
     border-radius: 0;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgb(0 0 0 / 20%);
 }
 
 .slider-wrapper {
@@ -206,13 +204,13 @@
     height: 50px;
     border: none;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgb(255 255 255 / 80%);
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    color: #002244;
+    color: #024;
     transition: all 0.3s ease;
     z-index: 10;
 }
@@ -226,9 +224,9 @@
 }
 
 .slider-button:hover {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgb(255 255 255 / 95%);
     transform: translateY(-50%) scale(1.1);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgb(0 0 0 / 20%);
 }
 
 /* Estilos para los dots */
@@ -246,7 +244,7 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid #fff;
     background: transparent;
     cursor: pointer;
     padding: 0;
@@ -254,18 +252,18 @@
 }
 
 .dot.active {
-    background: white;
+    background: #fff;
     transform: scale(1.2);
 }
 
 /* Video container */
 .video-container {
-    background: rgb(255, 255, 255);
+    background: rgb(255 255 255);
     border-radius: 15px;
     padding: 30px;
     margin: 40px auto;
     max-width: 1200px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
 }
 
 .video-container h2 {
@@ -279,7 +277,7 @@
     width: 100%;
     max-width: 1100px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
     aspect-ratio: 16/9;
     height: auto;
 }
@@ -305,9 +303,9 @@
     max-width: 1000px;
     margin: 0 auto;
     padding: 40px;
-    background: white;
+    background: #fff;
     border-radius: 15px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 35px rgb(0 0 0 / 10%);
     position: relative;
 }
 
@@ -318,7 +316,7 @@
 
 .contacto-header h2 {
     font-size: 2.5em;
-    color: #002244;
+    color: #024;
     margin-bottom: 20px;
     position: relative;
     padding-bottom: 15px;
@@ -333,7 +331,7 @@
     transform: translateX(-50%);
     width: 100px;
     height: 3px;
-    background: linear-gradient(to right, #002244, #160279);
+    background: linear-gradient(to right, #024, #160279);
 }
 
 .contacto-header p {
@@ -371,7 +369,7 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(to right, #002244, #105daa);
+    background: linear-gradient(to right, #024, #105daa);
     transition: transform 0.3s ease;
     transform: scaleX(0);
     transform-origin: left;
@@ -379,7 +377,7 @@
 
 .contacto-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgb(0 0 0 / 10%);
 }
 
 .contacto-item:hover::before {
@@ -396,7 +394,7 @@
     padding: 8px 15px;
     border-radius: 5px;
     transition: all 0.3s ease;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgb(255 255 255 / 10%);
 }
 
 .contacto-item .email-link {
@@ -405,7 +403,7 @@
 
 .contacto-item .gmail-link {
     background-color: #ea4335;
-    color: white;
+    color: #fff;
 }
 
 .contacto-item .email-link:hover {
@@ -416,7 +414,7 @@
 .contacto-item .gmail-link:hover {
     background-color: #d93025;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(234, 67, 53, 0.2);
+    box-shadow: 0 4px 8px rgb(234 67 53 / 20%);
 }
 
 .contacto-item > i {
@@ -425,19 +423,19 @@
 }
 
 .contacto-item > i.fa-envelope {
-    color: #EA4335;
+    color: #ea4335;
 }
 
 .contacto-item > i.fa-whatsapp {
-    color: #25D366;
+    color: #25d366;
 }
 
 .contacto-item > i.fa-map-marker-alt {
-    color: #4285F4;
+    color: #4285f4;
 }
 
 .contacto-item h3 {
-    color: #002244;
+    color: #024;
     font-size: 1.3em;
     margin-bottom: 15px;
 }
@@ -464,7 +462,7 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (width <= 768px) {
     #quienes-somos {
         padding: 60px 0;
     }
@@ -570,32 +568,32 @@
 }
 
 .whatsapp-mobile {
-    background-color: #25D366;
-    color: white;
+    background-color: #25d366;
+    color: #fff;
 }
 
 .whatsapp-web {
-    background-color: #128C7E;
-    color: white;
+    background-color: #128c7e;
+    color: #fff;
 }
 
 .whatsapp-mobile:hover {
     background-color: #22c35e;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(37, 211, 102, 0.2);
+    box-shadow: 0 4px 8px rgb(37 211 102 / 20%);
 }
 
 .whatsapp-web:hover {
     background-color: #0e7265;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(18, 140, 126, 0.2);
+    box-shadow: 0 4px 8px rgb(18 140 126 / 20%);
 }
 
 .whatsapp-mobile i, .whatsapp-web i {
     font-size: 1.2em;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
     .whatsapp-container {
         width: 100%;
     }
@@ -608,8 +606,8 @@
 .footer-line {
     width: 2px;
     min-height: 180px;
-    background: linear-gradient(to bottom, #ffffff, #ffffff, #ffeecc);
+    background: linear-gradient(to bottom, #fff, #fff, #fec);
     margin: 0 40px;
     border-radius: 2px;
     align-self: center;
-} 
+}
