@@ -1,4 +1,4 @@
-/* Estilos específicos para la página de inicio */
+/*Estilos específicos para la página de inicio */
 
 /* Sección Quiénes Somos */
 #quienes-somos {
@@ -589,7 +589,8 @@
     box-shadow: 0 4px 8px rgb(18 140 126 / 20%);
 }
 
-.whatsapp-mobile i, .whatsapp-web i {
+.whatsapp-mobile i,
+.whatsapp-web i {
     font-size: 1.2em;
 }
 
