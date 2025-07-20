@@ -2,12 +2,12 @@
 
 /* Sección introductoria */
 .intro-section {
-    background: linear-gradient(to right, #002244, #105daa);
-    color: white;
+    background: linear-gradient(to right, #024, #105daa);
+    color: #fff;
     padding: 40px;
     border-radius: 15px;
     margin-bottom: 40px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
     will-change: opacity, transform;
 }
 
@@ -35,15 +35,15 @@
 
 /* Sección de información */
 .info-section {
-    background: white;
+    background: #fff;
     border-radius: 15px;
     padding: 30px;
     margin-bottom: 40px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
 }
 
 .info-section h2 {
-    color: #002244;
+    color: #024;
     font-size: 2em;
     margin-bottom: 20px;
     padding-bottom: 15px;
@@ -83,7 +83,7 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(to right, #002244, #105daa);
+    background: linear-gradient(to right, #024, #105daa);
     transition: transform 0.3s ease;
     transform: scaleX(0);
     transform-origin: left;
@@ -91,7 +91,7 @@
 
 .info-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
 }
 
 .info-card:hover::before {
@@ -149,8 +149,8 @@
 .back-button {
     display: inline-block;
     padding: 10px 20px;
-    background: linear-gradient(to right, #002244, #105daa);
-    color: white;
+    background: linear-gradient(to right, #024, #105daa);
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
@@ -161,36 +161,12 @@
     transform: translateX(-5px);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .saber-mas-container {
-        padding: 0 15px;
-        margin: 20px auto;
-    }
-
-    .info-section {
-        padding: 20px;
-    }
-
-    .info-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .info-card {
-        padding: 20px;
-    }
-
-    .concepto-list li {
-        margin-bottom: 10px;
-    }
-}
-
 /* Footer Saber Más */
 .footer-sabermas {
     background: #000;
     color: #fff;
     text-align: center;
-    padding: 30px 0 20px 0;
+    padding: 30px 0 20px;
     font-size: 1.1em;
     margin-top: 40px;
 }
@@ -205,16 +181,16 @@
 .nota-tecnica {
     background: #f8f9fa;
     border-radius: 15px;
-    padding: 35px 30px 30px 30px;
+    padding: 35px 30px 30px;
     margin-bottom: 40px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 24px rgb(0 0 0 / 8%);
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .nota-tecnica h2 {
-    color: #002244;
+    color: #024;
     font-size: 2em;
     text-align: center;
     margin-bottom: 20px;
@@ -262,19 +238,42 @@
 }
 
 .nota-tecnica em {
-    color: #002244;
+    color: #024;
     font-style: normal;
     font-weight: 500;
-    background: linear-gradient(120deg, rgba(16, 93, 170, 0.08) 0%, rgba(16, 93, 170, 0.08) 100%);
+    background: linear-gradient(120deg, rgb(16 93 170 / 8%) 0%, rgb(16 93 170 / 8%) 100%);
     padding: 0 4px;
     border-radius: 3px;
 }
 
-@media (max-width: 768px) {
+/* Responsive */
+@media (width <= 768px) {
+    .saber-mas-container {
+        padding: 0 15px;
+        margin: 20px auto;
+    }
+
+    .info-section {
+        padding: 20px;
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card {
+        padding: 20px;
+    }
+
+    .concepto-list li {
+        margin-bottom: 10px;
+    }
+
     .nota-tecnica {
         padding: 20px 10px;
     }
+
     .nota-tecnica ul {
         max-width: 100%;
     }
-} 
+}
