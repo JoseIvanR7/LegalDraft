@@ -1,4 +1,4 @@
-/*Estilos específicos para la página de inicio */
+/* Estilos específicos para la página de inicio */
 
 /* Sección Quiénes Somos */
 #quienes-somos {
@@ -15,7 +15,7 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(to right, #024, #105daa);
+    background: linear-gradient(to right, #002244, #105daa);
 }
 
 .quienes-somos-container {
@@ -40,6 +40,7 @@
     top: 20px;
     left: 20px;
     right: -20px;
+    bottom: -20px;
     border: 2px solid #160279;
     z-index: 1;
     transition: all 0.3s ease;
@@ -49,7 +50,7 @@
     width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 15px 30px rgb(0 0 0 / 15%);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
     position: relative;
     z-index: 2;
     transition: transform 0.5s ease, filter 0.5s ease;
@@ -78,7 +79,7 @@
 
 .qs-text h2 {
     font-size: 2.5em;
-    color: #024;
+    color: #002244;
     margin-bottom: 30px;
     position: relative;
     padding-bottom: 15px;
@@ -110,13 +111,14 @@
 
 .qs-text em {
     font-style: normal;
-    color: #024;
+    color: #002244;
     font-weight: 500;
-    background: linear-gradient(120deg, rgb(16 93 170 / 20%), rgb(16 92 170 / 20%));
+    background: linear-gradient(120deg, rgba(16, 93, 170, 0.2) 0%, rgba(16, 93, 170, 0.2) 100%);
+    padding: 0 5px;
 }
 
 /* Animación de entrada */
-@keyframes fade-in-up {
+@keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(30px);
@@ -129,14 +131,14 @@
 
 /* Sección Armonización */
 #armonizacion {
-    background: linear-gradient(135deg, #fff, #e6f0ff);
+    background: linear-gradient(135deg, #ffffff, #e6f0ff);
     padding: 60px 20px;
     text-align: center;
     border-radius: 20px;
     margin: 40px auto;
     max-width: 1000px;
-    box-shadow: 0 8px 20px rgb(0 0 0 / 10%);
-    animation: fade-in-up 1.2s ease-in-out;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.2s ease-in-out;
 }
 
 #armonizacion h2 {
@@ -150,7 +152,7 @@
 
 #armonizacion p {
     font-size: 20px;
-    color: #333;
+    color: #333333;
     line-height: 1.7;
     max-width: 900px;
     margin: 0 auto;
@@ -164,7 +166,7 @@
     margin: 0;
     overflow: hidden;
     border-radius: 0;
-    box-shadow: 0 10px 30px rgb(0 0 0 / 20%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .slider-wrapper {
@@ -204,13 +206,13 @@
     height: 50px;
     border: none;
     border-radius: 50%;
-    background: rgb(255 255 255 / 80%);
+    background: rgba(255, 255, 255, 0.8);
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    color: #024;
+    color: #002244;
     transition: all 0.3s ease;
     z-index: 10;
 }
@@ -224,9 +226,9 @@
 }
 
 .slider-button:hover {
-    background: rgb(255 255 255 / 95%);
+    background: rgba(255, 255, 255, 0.95);
     transform: translateY(-50%) scale(1.1);
-    box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilos para los dots */
@@ -244,7 +246,7 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 2px solid white;
     background: transparent;
     cursor: pointer;
     padding: 0;
@@ -252,18 +254,18 @@
 }
 
 .dot.active {
-    background: #fff;
+    background: white;
     transform: scale(1.2);
 }
 
 /* Video container */
 .video-container {
-    background: rgb(255 255 255);
+    background: rgb(255, 255, 255);
     border-radius: 15px;
     padding: 30px;
     margin: 40px auto;
     max-width: 1200px;
-    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .video-container h2 {
@@ -277,7 +279,7 @@
     width: 100%;
     max-width: 1100px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     aspect-ratio: 16/9;
     height: auto;
 }
@@ -303,9 +305,9 @@
     max-width: 1000px;
     margin: 0 auto;
     padding: 40px;
-    background: #fff;
+    background: white;
     border-radius: 15px;
-    box-shadow: 0 15px 35px rgb(0 0 0 / 10%);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
@@ -316,7 +318,7 @@
 
 .contacto-header h2 {
     font-size: 2.5em;
-    color: #024;
+    color: #002244;
     margin-bottom: 20px;
     position: relative;
     padding-bottom: 15px;
@@ -331,7 +333,7 @@
     transform: translateX(-50%);
     width: 100px;
     height: 3px;
-    background: linear-gradient(to right, #024, #160279);
+    background: linear-gradient(to right, #002244, #160279);
 }
 
 .contacto-header p {
@@ -369,7 +371,7 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(to right, #024, #105daa);
+    background: linear-gradient(to right, #002244, #105daa);
     transition: transform 0.3s ease;
     transform: scaleX(0);
     transform-origin: left;
@@ -377,7 +379,7 @@
 
 .contacto-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgb(0 0 0 / 10%);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .contacto-item:hover::before {
@@ -394,7 +396,7 @@
     padding: 8px 15px;
     border-radius: 5px;
     transition: all 0.3s ease;
-    background-color: rgb(255 255 255 / 10%);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .contacto-item .email-link {
@@ -403,7 +405,7 @@
 
 .contacto-item .gmail-link {
     background-color: #ea4335;
-    color: #fff;
+    color: white;
 }
 
 .contacto-item .email-link:hover {
@@ -414,7 +416,7 @@
 .contacto-item .gmail-link:hover {
     background-color: #d93025;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgb(234 67 53 / 20%);
+    box-shadow: 0 4px 8px rgba(234, 67, 53, 0.2);
 }
 
 .contacto-item > i {
@@ -423,19 +425,19 @@
 }
 
 .contacto-item > i.fa-envelope {
-    color: #ea4335;
+    color: #EA4335;
 }
 
 .contacto-item > i.fa-whatsapp {
-    color: #25d366;
+    color: #25D366;
 }
 
 .contacto-item > i.fa-map-marker-alt {
-    color: #4285f4;
+    color: #4285F4;
 }
 
 .contacto-item h3 {
-    color: #024;
+    color: #002244;
     font-size: 1.3em;
     margin-bottom: 15px;
 }
@@ -462,7 +464,7 @@
 }
 
 /* Responsive */
-@media (width <= 768px) {
+@media (max-width: 768px) {
     #quienes-somos {
         padding: 60px 0;
     }
@@ -568,33 +570,32 @@
 }
 
 .whatsapp-mobile {
-    background-color: #25d366;
-    color: #fff;
+    background-color: #25D366;
+    color: white;
 }
 
 .whatsapp-web {
-    background-color: #128c7e;
-    color: #fff;
+    background-color: #128C7E;
+    color: white;
 }
 
 .whatsapp-mobile:hover {
     background-color: #22c35e;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgb(37 211 102 / 20%);
+    box-shadow: 0 4px 8px rgba(37, 211, 102, 0.2);
 }
 
 .whatsapp-web:hover {
     background-color: #0e7265;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgb(18 140 126 / 20%);
+    box-shadow: 0 4px 8px rgba(18, 140, 126, 0.2);
 }
 
-.whatsapp-mobile i,
-.whatsapp-web i {
+.whatsapp-mobile i, .whatsapp-web i {
     font-size: 1.2em;
 }
 
-@media (width <= 768px) {
+@media (max-width: 768px) {
     .whatsapp-container {
         width: 100%;
     }
@@ -607,8 +608,183 @@
 .footer-line {
     width: 2px;
     min-height: 180px;
-    background: linear-gradient(to bottom, #fff, #fff, #fec);
+    background: linear-gradient(to bottom, #ffffff, #ffffff, #ffeecc);
     margin: 0 40px;
     border-radius: 2px;
     align-self: center;
+} 
+
+/* Sección Filosofía */
+#filosofia {
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
 }
+
+#filosofia::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(to right, #e6b800, #ffd700);
+}
+
+#filosofia .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    z-index: 2;
+}
+
+#filosofia h2 {
+    font-size: 2.5em;
+    color: #e6b800;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#filosofia h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #e6b800, #ffd700);
+}
+
+#filosofia p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+#filosofia ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 25px 0;
+}
+
+#filosofia li {
+    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #e6b800;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#filosofia li::before {
+    content: '▶';
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #e6b800;
+    font-size: 0.8em;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+#filosofia li:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(10px);
+    box-shadow: 0 5px 15px rgba(230, 184, 0, 0.2);
+}
+
+#filosofia li:hover::before {
+    opacity: 1;
+    left: 15px;
+}
+
+#filosofia strong {
+    color: #e6b800;
+    font-weight: 600;
+}
+
+/* Animaciones para la sección filosofía */
+.filosofia-fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.filosofia-fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.filosofia-slide-in {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.6s ease-out;
+}
+
+.filosofia-slide-in.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.filosofia-scale-in {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.7s ease-out;
+}
+
+.filosofia-scale-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Efecto de brillo para los elementos */
+#filosofia li {
+    position: relative;
+}
+
+#filosofia li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(230, 184, 0, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+#filosofia li:hover::after {
+    left: 100%;
+}
+
+/* Responsive para filosofía */
+@media (max-width: 768px) {
+    #filosofia {
+        padding: 60px 0;
+    }
+    
+    #filosofia h2 {
+        font-size: 2em;
+    }
+    
+    #filosofia p {
+        font-size: 1em;
+    }
+    
+    #filosofia li {
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+} 
