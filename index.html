@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Legal Draft®</title>
-  <meta name="description" content="LegalDraft es despacho jurídico especializado en Derecho Municipal y Estatal en el Estado de Hidalgo." />
   <link rel="stylesheet" href="css/common.css" />
   <link rel="stylesheet" href="css/index.css" />
   <link rel="icon" href="Iconos/LegalDraft.ico" type="image/x-icon"> 
@@ -46,14 +45,22 @@
     </div>
 
     <div class="nav-option">
+      <a href="#filosofia">
+        <img src="Iconos/Filosofia.ico" alt="Filosofia" />
+        <span>Filosofía</span>
+      </a>
+    </div>
+
+    <div class="nav-option">
       <a href="#armonizacion">
         <img src="Iconos/Armonizacion.ico" alt="Armonizacion" />
         <span>Armonización</span>
       </a>
     </div>
 
+
     <div class="nav-option">
-      <a href="Servicios.html">
+      <a href="servicios.html">
         <img src="Iconos/Servicios.ico" alt="Servicios" />
         <span>Servicios</span>
       </a>
@@ -139,16 +146,66 @@
   </script>
   
 
-<section id="armonizacion">
-  <div class="container">
-      <h2>Armonización</h2>
-      <p>La armonización vertical y horizontal de bandos y reglamentos con las
-        las leyes federales y locales en nuestro país es un proceso legal y administrativo
-        fundamental para asegurar que las normas emitidas por los municipios y los
-        estados sean coherentes y compatibles con el marco jurídico nacional.
-      </p> 
-    </div>
-  </section>
+  <section id="filosofia">
+    <div class="container">
+        <h2 class="filosofia-fade-in">Objetivo General</h2>
+        <p class="filosofia-slide-in">El objetivo general es desarrollar una plataforma integral, interactiva y actualizable que ofrezca a los abogados y peritos las siguientes herramientas:
+
+        <ul>
+          <li class="filosofia-scale-in">Herramientas inteligentes para la redacción, fundamentación y presentación de documentos jurídicos como demandas, contestaciones, e incidentes.</li>
+          <li class="filosofia-scale-in">Guías para identificar, calcular y reclamar los daños legalmente procedentes.</li>
+          <li class="filosofia-scale-in">Automatización de incidentes procesales con fundamentos actualizados a las últimas reformas legales.</li>
+          <li class="filosofia-scale-in">Actualización constante en normatividad y jurisprudencia.</li>
+          <li class="filosofia-scale-in">Capacitación continua sobre nuevos procesos y procedimientos.</li>
+        </ul>
+        
+        <h2 class="filosofia-fade-in">Propuesta de Valor</h2>
+        <p class="filosofia-slide-in">
+          La plataforma se distingue por su:
+
+          <ul>
+            <li class="filosofia-scale-in">Precisión y seguridad jurídica: El usuario siempre tendrá acceso a los fundamentos más actualizados y pertinentes.</li>
+          
+          
+            <li class="filosofia-scale-in">Ahorro de tiempo y reducción de errores: La automatización inteligente agiliza el trabajo y elimina omisiones.</li>
+            
+            
+            <li class="filosofia-scale-in">Adaptabilidad: La plataforma evoluciona en respuesta a las reformas legales y a las necesidades de la profesión.</li>
+            
+            
+            <li class="filosofia-scale-in">Inclusividad: Es útil tanto para abogados experimentados como para principiantes.</li>
+            
+            
+            <li class="filosofia-scale-in">Enfoque práctico: Ofrece soluciones listas para ser aplicadas en tribunales, negociaciones y peritajes.</li>
+
+          </ul>
+        </p>
+        </p> 
+
+        <h2 class="filosofia-fade-in">Impacto Esperado</h2>
+        <p class="filosofia-slide-in">Se espera que Legal Draft® mejore significativamente la calidad y eficacia de la litigación. 
+          También busca reducir el riesgo de nulidades y sanciones por errores procesales , democratizar el 
+          acceso a herramientas de alto nivel y transformar la cultura jurídica hacia la precisión, actualización y resultados.</p>
+
+
+          <p class="filosofia-slide-in">
+            <strong>Legal Draft®</strong> es presentada como la nueva forma de ejercer el derecho en México 
+            y Latinoamérica, donde la precisión es primordial. La plataforma busca respaldar, actualizar 
+            y llevar a los abogados al siguiente nivel.
+          </p>
+      </div>
+    </section>
+
+    <section id="armonizacion">
+      <div class="container">
+          <h2>Armonización</h2>
+          <p>La armonización vertical y horizontal de bandos y reglamentos con las
+            las leyes federales y locales en nuestro país es un proceso legal y administrativo
+            fundamental para asegurar que las normas emitidas por los municipios y los
+            estados sean coherentes y compatibles con el marco jurídico nacional.
+          </p> 
+        </div>
+      </section>
 
   <div class="video-container">
     <h2>Video relacionado</h2>
@@ -253,7 +310,7 @@
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="#quienes-somos">Quiénes somos</a></li>
-        <li><a href="Servicios.html">Servicios</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </div>
@@ -510,8 +567,72 @@
         const mouseY = e.clientY / window.innerHeight - 0.5;
         logo.style.transform = `translate(${mouseX * 10}px, ${mouseY * 10}px)`;
       });
+
+      // Animaciones para la sección filosofía
+      const filosofiaElements = document.querySelectorAll('.filosofia-fade-in, .filosofia-slide-in, .filosofia-scale-in');
+      
+      const filosofiaObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            // Añadir delay escalonado para los elementos
+            setTimeout(() => {
+              entry.target.classList.add('visible');
+            }, index * 200); // 200ms de delay entre cada elemento
+          }
+        });
+      }, { 
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      });
+
+      filosofiaElements.forEach(element => {
+        filosofiaObserver.observe(element);
+      });
+
+      // Efecto de hover mejorado para los elementos de la lista
+      const filosofiaItems = document.querySelectorAll('#filosofia li');
+      filosofiaItems.forEach(item => {
+        item.addEventListener('mouseenter', () => {
+          // Añadir efecto de pulso sutil
+          item.style.animation = 'filosofiaPulse 0.6s ease-in-out';
+        });
+        
+        item.addEventListener('mouseleave', () => {
+          item.style.animation = 'none';
+        });
+      });
     });
   </script>
+
+  <style>
+    /* Animación de pulso para elementos de filosofía */
+    @keyframes filosofiaPulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+      100% { transform: scale(1); }
+    }
+
+    /* Efecto de brillo para títulos de filosofía */
+    #filosofia h2 {
+      position: relative;
+      overflow: hidden;
+    }
+
+    #filosofia h2::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(230, 184, 0, 0.3), transparent);
+      transition: left 0.8s ease;
+    }
+
+    #filosofia h2:hover::before {
+      left: 100%;
+    }
+  </style>
 
   <script>
     // Animación de brillo para todos los logos
