@@ -32,6 +32,7 @@
   <nav class="nav-cards">
     <div class="nav-option"><a href="index.html"><img src="Iconos/Inicio.ico" alt="Inicio" /><span>Inicio</span></a></div>
     <div class="nav-option"><a href="#quienes-somos"><img src="Iconos/QuienesSomos.ico" alt="¿Quiénes somos?" /><span>¿Quiénes somos?</span></a></div>
+    <div class="nav-option"><a href="#filosofia"><img src="Iconos/Filosofia.ico" alt="Filosofia" /><span>Filosofia</span></a></div>
     <div class="nav-option"><a href="#armonizacion"><img src="Iconos/Armonizacion.ico" alt="Armonizacion" /><span>Armonización</span></a></div>
     <div class="nav-option"><a href="Servicios.html"><img src="Iconos/Servicios.ico" alt="Servicios" /><span>Servicios</span></a></div>
     <div class="nav-option"><a href="#contacto"><img src="Iconos/Contacto.ico" alt="Contacto" /><span>Contacto</span></a></div>
@@ -69,6 +70,57 @@
         </div>
       </div>
     </section>
+
+    <section id="filosofia">
+    <div class="container">
+        <h2 class="filosofia-fade-in">Objetivo General</h2>
+        <p class="filosofia-slide-in">El objetivo general es desarrollar una plataforma integral, interactiva y actualizable que ofrezca a los abogados y peritos las siguientes herramientas:
+
+        <ul>
+          <li class="filosofia-scale-in">Herramientas inteligentes para la redacción, fundamentación y presentación de documentos jurídicos como demandas, contestaciones, e incidentes.</li>
+          <li class="filosofia-scale-in">Guías para identificar, calcular y reclamar los daños legalmente procedentes.</li>
+          <li class="filosofia-scale-in">Automatización de incidentes procesales con fundamentos actualizados a las últimas reformas legales.</li>
+          <li class="filosofia-scale-in">Actualización constante en normatividad y jurisprudencia.</li>
+          <li class="filosofia-scale-in">Capacitación continua sobre nuevos procesos y procedimientos.</li>
+        </ul>
+        
+        <h2 class="filosofia-fade-in">Propuesta de Valor</h2>
+        <p class="filosofia-slide-in">
+          La plataforma se distingue por su:
+
+          <ul>
+            <li class="filosofia-scale-in">Precisión y seguridad jurídica: El usuario siempre tendrá acceso a los fundamentos más actualizados y pertinentes.</li>
+          
+          
+            <li class="filosofia-scale-in">Ahorro de tiempo y reducción de errores: La automatización inteligente agiliza el trabajo y elimina omisiones.</li>
+            
+            
+            <li class="filosofia-scale-in">Adaptabilidad: La plataforma evoluciona en respuesta a las reformas legales y a las necesidades de la profesión.</li>
+            
+            
+            <li class="filosofia-scale-in">Inclusividad: Es útil tanto para abogados experimentados como para principiantes.</li>
+            
+            
+            <li class="filosofia-scale-in">Enfoque práctico: Ofrece soluciones listas para ser aplicadas en tribunales, negociaciones y peritajes.</li>
+
+          </ul>
+        </p>
+        </p> 
+
+        <h2 class="filosofia-fade-in">Impacto Esperado</h2>
+        <p class="filosofia-slide-in">Se espera que Legal Draft® mejore significativamente la calidad y eficacia de la litigación. 
+          También busca reducir el riesgo de nulidades y sanciones por errores procesales , democratizar el 
+          acceso a herramientas de alto nivel y transformar la cultura jurídica hacia la precisión, actualización y resultados.</p>
+
+
+          <p class="filosofia-slide-in">
+            <strong>Legal Draft®</strong> es presentada como la nueva forma de ejercer el derecho en México 
+            y Latinoamérica, donde la precisión es primordial. La plataforma busca respaldar, actualizar 
+            y llevar a los abogados al siguiente nivel.
+          </p>
+      </div>
+    </section>
+
 
     <section id="armonizacion">
       <div class="container">
@@ -159,6 +211,72 @@
       <p>&copy; 2025 Legal Draft® | Todos los derechos reservados.</p>
     </div>
   </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Efecto de typing para el subtítulo
+      const subtitle = document.querySelector('.header-text h2');
+      const subtitleText = subtitle.textContent;
+      subtitle.classList.add('typing-text');
+      subtitle.style.width = '0';
+      
+      setTimeout(() => {
+        subtitle.style.animation = 'typing 3.5s steps(40, end) forwards, blink-caret .75s step-end infinite';
+      }, 500);
+
+      // Efecto de brillo aleatorio para los highlights
+      const highlights = document.querySelectorAll('.highlight');
+      setInterval(() => {
+        const randomHighlight = highlights[Math.floor(Math.random() * highlights.length)];
+        randomHighlight.style.textShadow = '0 0 10px rgba(230, 184, 0, 0.8)';
+        setTimeout(() => {
+          randomHighlight.style.textShadow = 'none';
+        }, 1000);
+      }, 2000);
+
+      // Efecto de parallax suave para el logo
+      const logo = document.querySelector('.logo');
+      document.addEventListener('mousemove', (e) => {
+        const mouseX = e.clientX / window.innerWidth - 0.5;
+        const mouseY = e.clientY / window.innerHeight - 0.5;
+        logo.style.transform = `translate(${mouseX * 10}px, ${mouseY * 10}px)`;
+      });
+
+      // Animaciones para la sección filosofía
+      const filosofiaElements = document.querySelectorAll('.filosofia-fade-in, .filosofia-slide-in, .filosofia-scale-in');
+      
+      const filosofiaObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            // Añadir delay escalonado para los elementos
+            setTimeout(() => {
+              entry.target.classList.add('visible');
+            }, index * 200); // 200ms de delay entre cada elemento
+          }
+        });
+      }, { 
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      });
+
+      filosofiaElements.forEach(element => {
+        filosofiaObserver.observe(element);
+      });
+
+      // Efecto de hover mejorado para los elementos de la lista
+      const filosofiaItems = document.querySelectorAll('#filosofia li');
+      filosofiaItems.forEach(item => {
+        item.addEventListener('mouseenter', () => {
+          // Añadir efecto de pulso sutil
+          item.style.animation = 'filosofiaPulse 0.6s ease-in-out';
+        });
+        
+        item.addEventListener('mouseleave', () => {
+          item.style.animation = 'none';
+        });
+      });
+    });
+  </script>
 
   <script src="js/slider.js"></script>
 </body>
